@@ -5,12 +5,13 @@
 - hooks
 - propTypes
 - create **VITE**
-- view my my [Project](https://kadirov-fariddun.github.io/lock-store)
+- view my [Project](https://kadirov-fariddun.github.io/lock-store)
 ## Libs
 - react-slick
 - slick-carousel
 ## Frameworks
 - sass
+# Plugins
 - autoprefixer
 # Author
 FrontEnd dev: Kadirov Fariddun (2023)
