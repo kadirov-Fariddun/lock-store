@@ -11,6 +11,7 @@
 - slick-carousel
 ## Frameworks
 - sass
+# Plugins
 - autoprefixer
 # Author
 FrontEnd dev: Kadirov Fariddun (2023)
