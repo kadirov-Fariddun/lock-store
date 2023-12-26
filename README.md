@@ -14,4 +14,4 @@
 # Plugins
 - autoprefixer
 # Author
-FrontEnd dev: Kadirov Fariddun (2023)
+FrontEnd dev: ***Kadirov Fariddun*** (2023)
