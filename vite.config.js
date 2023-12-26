@@ -5,6 +5,7 @@ import autoprefixer from 'autoprefixer';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base:"https://kadirov-fariddun.github.io/lock-store/",
   plugins: [react()],
   css:{
     postcss:{
