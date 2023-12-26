@@ -1,0 +1,134 @@
+// import styles 
+@import url('../../fonts.scss');
+// vars
+$ftfProDisplay:'sf-pro-display';
+$ftfProText:'sf-pro-text';
+// bearkpoints 
+$bp1024:1024px;
+$bp991:991px;
+$bp900:900px;
+$bp768:768px;
+$bp700:700px;
+$bp600:600px;
+$bp500:500px;
+$bp400:400px;
+$bp320:320px;
+.title{
+    font-family: $ftfProText;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 62px;
+    color: #161C24;
+    margin-bottom: 24px;
+    @media(max-width:$bp768){
+        font-size: 35px;
+    }
+    @media(max-width:$bp500){
+        font-size: 30px;
+    }
+    @media(max-width:$bp400){
+        font-size: 22px;
+    }
+    @media(max-width:328px){
+        line-height: 30px;
+    }
+}
+.shipping-payment{
+    @media(max-width:$bp991){
+        padding-top: 120px;
+    }
+    //title
+    &-title{
+        margin-top: 40px;
+    }
+    //flex
+    &-flex{
+        display: flex;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #C4CDD5;
+        column-gap: 20px;
+        @media(max-width:$bp900){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(max-width:$bp600){
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            row-gap: 30px;
+        }
+    }
+    .shipping-payment-info{
+        //title
+        &-title{
+            margin-bottom: 24px;
+        }
+    //shipping-payment-info-title
+    &-title{
+        font-family: $ftfProText;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #161C24;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        margin-bottom: 12px;
+    }
+    //text
+    &-text{
+        font-family: $ftfProText;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    } 
+    margin-bottom: 24px;
+    }
+    //guarantees
+    .guarantees{
+        margin-top: 80px;
+        //text
+        &-text{
+            margin-bottom: 12px;
+            font-family:$ftfProText;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+        //list
+        &-list{
+            
+            li{
+                display: flex;
+                span{
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #4295E4;
+                    margin-right: 10px;
+                    margin-top: 6px;
+                }
+                font-family:$ftfProText;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    span{
+        font-family:$ftfProText;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #161C24;
+        margin-bottom: 10px;
+        span{
+        font-family:$ftfProText;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #161C24;
+        }
+    }
+
+}

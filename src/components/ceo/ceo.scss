@@ -1,0 +1,131 @@
+@import url('../../fonts.scss');
+$ftfProDisplay:'sf-pro-display';
+$ftfProText:'sf-pro-text';
+// breakpoint
+$bp1024:1024px;
+$bp991:991px;
+$bp900:900px;
+$bp768:768px;
+$bp700:700px;
+$bp600:600px;
+$bp500:500px;
+$bp400:400px;
+$bp320:320px;
+.ceo{
+    //flex
+    &.ceo-flex-rev{
+        .ceo-flex{
+            flex-direction: row-reverse;
+            @media(max-width:$bp991){
+                flex-direction: column;
+                .ceo-bottom-text{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        margin-top: 80px;
+        margin-bottom: 100px;
+
+    }
+    &-flex{
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+        @media(max-width:$bp991){
+            flex-direction: column-reverse;
+
+        }
+    }
+    // info
+    &-info{
+        width: 50%;
+        @media(max-width:$bp991){
+            width: 100%;
+        }
+    }
+    // title
+    &-title{
+        font-family: $ftfProText;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+        margin-bottom: 24px;
+        color: #161C24;
+        @media(max-width:$bp600){
+            font-size: 24px;
+        }
+    }
+    //text
+    &-text{
+        font-family: $ftfProText;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #454F5B;
+        @media(max-width:$bp600){
+            font-size: 16px;
+        }
+    }
+    // ceo list
+    .ceo-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 16px;
+        margin-top: 24px;
+        
+        li{
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+            svg{
+                path{
+                width: 18px;
+                height: 18px;
+                }
+                fill: #4295E4;
+            }
+            span{
+                font-family:$ftfProText;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #161C24;
+                @media(max-width:1100px){
+                    font-size: 16px;
+                }
+                @media(max-width:$bp991){
+                    font-size: 20px;
+                }
+                @media(max-width:$bp600){
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    // ceo-bottom text
+    &-bottom-text{
+        font-family: $ftfProText;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #454F5B;
+        margin-top: 24px;
+    }
+    // image
+    &-image{
+        width: 50%;
+        @media(max-width:$bp991){
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            img{
+                max-width: 600px;
+
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

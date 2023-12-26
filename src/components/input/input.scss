@@ -1,0 +1,38 @@
+@import url('../../fonts.scss');
+// vars
+$ftfProDisplay:'sf-pro-display';
+$ftfProText:'sf-pro-text';
+label{
+    span{
+        font-family: $ftfProText;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #161C24;
+        display: block;
+        width: fit-content;
+        margin-bottom: 5px;
+    }
+    input{
+        height: 50px;
+        padding: 10px 12px;
+        border: 1px solid #EBECEC;
+        outline: none;
+        font-family: $ftfProText;
+        color: #161C24;
+        font-size: 16px;
+        &::-webkit-inner-spin-button {
+            appearance: none;
+        }
+        &::placeholder{
+            font-family: $ftfProText;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #ADADAD;
+        }
+        &:focus{
+            border-color: rgba(66, 149, 228, 0.2);
+        }
+    }
+}

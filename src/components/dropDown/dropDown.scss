@@ -1,0 +1,70 @@
+// import styles 
+@import url('../../fonts.scss');
+// vars
+$ftfProDisplay:'sf-pro-display';
+$ftfProText:'sf-pro-text';
+.drop-down{
+    padding: 16px;
+    max-width: 600px;
+    width: 100%;
+    transition: .3s;
+    height: calc(26px + 12px);
+    overflow: hidden;
+    @media(max-width:431px){
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &-active{
+        transition: .3s;
+        height: 142px;
+        @media(max-width:561px){
+            height: 162px;
+        }
+        @media(max-width:431px){
+            height: 187px;
+
+        }
+        @media(max-width:372px){
+            height: 210px;
+        }
+        .drop-down-title svg{
+            transform: rotate(-180deg);
+            transition: .3s;
+            path{
+            stroke: #4295E4;
+            }
+        }
+    }
+    // title
+    &-title{
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        span{
+            //styleName: 16/medium 16 \ 26;
+            font-family: $ftfProText;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            color: #161C24;
+        }
+        svg{
+            stroke: #454F5B;
+            stroke-width: 1;
+            width: 16px;
+            height: 8px;
+            transition: .3s;
+        }
+    }
+    // text
+    &-text{
+        font-family:$ftfProText;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #454F5B;
+    }
+}

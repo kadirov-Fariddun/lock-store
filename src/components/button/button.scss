@@ -1,0 +1,20 @@
+@import url('../../fonts.scss');
+// vars
+$ftfProDisplay:'sf-pro-display';
+.button{
+    height: 50px;
+    background-color: #4295E4;
+    color: #fff;
+    font-family: $ftfProDisplay;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    border: 1px solid #4295E4;
+    outline: none;
+    transition: .3s;
+    cursor: pointer;
+    &:hover{
+        transition: .3s;
+        transform: translateY(-3px);
+    }
+}

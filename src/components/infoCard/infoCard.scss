@@ -1,0 +1,69 @@
+// import styles 
+@import url('../../fonts.scss');
+// vars
+$ftfProDisplay:'sf-pro-display';
+$ftfProText:'sf-pro-text';
+
+.info-card{
+    margin-bottom: 30px;
+    &-content{
+        display: flex;
+        align-items:flex-start;
+        &:nth-child(1){
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        span{
+            height: 75px;
+            width: 2px;
+            background-color: #C4CDD5;
+            display: block;
+            margin-left: 25.5px;
+            margin-right: 45px;
+            margin-bottom: -25px;
+            &.line-none{
+                opacity: 0;
+            }
+            @media(max-width:768px){
+                margin-right: 25px;
+                margin-left: 17.5px;
+                height: 80px;
+            }
+        }
+        //image 
+        &-image{
+            width: 55px;
+            height: 55px;
+            border: 1px solid #4295E44D;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            @media(max-width:768px){
+                width: 40px;
+                height: 40px;
+            }
+        }
+        // title
+        &-title{
+            font-family:$ftfProText;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px;
+            color: #161C24;
+        }
+        //text
+        &-text{
+            font-family:$ftfProText;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #161C24;
+        }
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
