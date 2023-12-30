@@ -7,7 +7,8 @@
 - create **VITE**
 - view my [Project](https://kadirov-fariddun.github.io/todo-list)
 ## Libs
-- absent
+- react-slick
+- slick-carousel
 ## Frameworks
 - sass
 # Plugins
