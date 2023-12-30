@@ -5,10 +5,9 @@
 - hooks
 - propTypes
 - create **VITE**
-- view my [Project](https://kadirov-fariddun.github.io/lock-store)
+- view my [Project](https://kadirov-fariddun.github.io/todo-list)
 ## Libs
-- react-slick
-- slick-carousel
+- absent
 ## Frameworks
 - sass
 # Plugins
